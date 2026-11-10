@@ -1,0 +1,217 @@
+{
+  "app": {
+    "title": "Careers embed",
+    "description": "Manage job postings and embed a careers widget on any website"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "select": "Select",
+    "empty": "-",
+    "serverError": "Server error ({status})",
+    "pagination": {
+      "label": "Pages",
+      "summary": "Page {page} of {totalPages} ({total} total)",
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "edit": "Edit",
+    "loading": "Loading..."
+  },
+  "nav": {
+    "websites": "Websites",
+    "subscription": "Subscription",
+    "logout": "Log out"
+  },
+  "errors": {
+    "title": "Something went wrong",
+    "description": "The page could not be loaded. Check that the server is running and try again.",
+    "retry": "Try again",
+    "notFoundTitle": "Page not found",
+    "notFoundDescription": "This record does not exist or has been deleted.",
+    "backToWebsites": "Back to websites"
+  },
+  "auth": {
+    "name": "First name",
+    "surname": "Last name",
+    "email": "Email",
+    "password": "Password",
+    "passwordConfirmation": "Confirm password",
+    "login": {
+      "title": "Sign in",
+      "description": "Sign in to manage your careers pages",
+      "submit": "Sign in",
+      "forgot": "Forgot password?",
+      "register": "Create an account"
+    },
+    "register": {
+      "title": "Create an account",
+      "description": "Register, then set up your company",
+      "submit": "Register",
+      "login": "Already have an account? Sign in"
+    },
+    "forgot": {
+      "title": "Forgot password",
+      "description": "We will email you a link to reset your password",
+      "submit": "Send reset link",
+      "back": "Back to sign in"
+    },
+    "reset": {
+      "title": "Reset password",
+      "description": "Choose a new password",
+      "submit": "Reset password"
+    }
+  },
+  "onboarding": {
+    "title": "Set up your company",
+    "description": "Your company owns the websites and job postings you create",
+    "fields": {
+      "name": "Company name",
+      "slug": "Company slug",
+      "email": "Company email",
+      "submit": "Complete setup"
+    }
+  },
+  "websites": {
+    "title": "Websites",
+    "new": "Register website",
+    "newJob": "New job posting",
+    "jobPostings": "Job postings",
+    "jobPostingsCount": "Job postings",
+    "createdAt": "Created",
+    "empty": "No websites registered yet",
+    "none": "Not set",
+    "fields": {
+      "name": "Name",
+      "domain": "Domain",
+      "slug": "Slug",
+      "company": "Company",
+      "branding_color": "Branding color",
+      "font_family": "Font family",
+      "theme": "Theme",
+      "themePlaceholder": "Select a theme",
+      "themes": {
+        "light": "Light",
+        "dark": "Dark"
+      }
+    }
+  },
+  "jobPostings": {
+    "new": "New job posting",
+    "edit": "Edit job posting",
+    "empty": "No job postings yet",
+    "salary": "Salary",
+    "noSalary": "Not specified",
+    "salaryRange": "{from} - {to}",
+    "status": "Status",
+    "active": "Active",
+    "inactive": "Inactive",
+    "applications": "Applications",
+    "deleteConfirm": "Delete job posting \"{title}\"?",
+    "fields": {
+      "title": "Title",
+      "location": "Location",
+      "job_type": "Job type",
+      "jobTypePlaceholder": "Select a job type",
+      "jobTypes": {
+        "full-time": "Full-time",
+        "part-time": "Part-time",
+        "freelance": "Freelance"
+      },
+      "salary_from": "Salary from",
+      "salary_to": "Salary to",
+      "description": "Description",
+      "expires_at": "Expires on",
+      "is_active": "Accepting applications"
+    }
+  },
+  "applications": {
+    "title": "Applications: {title}",
+    "empty": "No applications yet",
+    "back": "Back to applications",
+    "backToWebsite": "Back to website",
+    "noMotivation": "No motivation text provided",
+    "deleteConfirm": "Delete the application from {name}?",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "status": "Status",
+      "submitted_at": "Submitted",
+      "job_posting": "Job posting",
+      "cv_file_path": "CV file",
+      "motivation_text": "Motivation"
+    },
+    "statuses": {
+      "new": "New",
+      "reviewed": "Reviewed",
+      "accepted": "Accepted",
+      "rejected": "Rejected"
+    }
+  },
+  "embed": {
+    "title": "Embed code",
+    "description": "Paste this snippet into any page of the website to show its open positions",
+    "strategy": "Script loading:",
+    "strategies": {
+      "defer": "Defer",
+      "async": "Async",
+      "none": "Blocking"
+    },
+    "copy": "Copy",
+    "copied": "Copied",
+    "preview": "Preview"
+  },
+  "billing": {
+    "title": "Subscription",
+    "subscribe": "Subscribe",
+    "cancelSubscription": "Cancel subscription",
+    "cancelConfirm": "Cancel this subscription?",
+    "plans": {
+      "monthly": {
+        "title": "Monthly",
+        "description": "Billed every month, cancel any time"
+      },
+      "yearly": {
+        "title": "Yearly",
+        "description": "Billed once a year"
+      }
+    },
+    "checkout": {
+      "successTitle": "Payment received",
+      "paid": "Thank you! Your subscription is active.",
+      "unpaid": "The payment is not complete yet (status: {status}).",
+      "subscription": "Subscription: {id}",
+      "continue": "Go to websites",
+      "cancelTitle": "Checkout cancelled",
+      "cancelDescription": "No payment was taken. You can choose a plan again at any time.",
+      "backToPlans": "Back to plans"
+    }
+  },
+  "validation": {
+    "nameRequired": "Name is required",
+    "surnameRequired": "Last name is required",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Invalid email format",
+    "passwordRequired": "Enter your password",
+    "passwordMin": "Password must be at least 8 characters",
+    "passwordConfirmationRequired": "Confirm your password",
+    "passwordConfirmed": "Passwords do not match",
+    "tokenRequired": "The reset link is invalid. Request a new one.",
+    "tooLong": "This value is too long",
+    "companyNameRequired": "Company name is required",
+    "companySlugRequired": "Company slug is required",
+    "companySlugPattern": "Use lowercase letters, numbers and dashes only",
+    "domainRequired": "Domain is required",
+    "colorInvalid": "Use a hex color such as #1d4ed8",
+    "themeInvalid": "Select a theme",
+    "titleRequired": "Title is required",
+    "locationRequired": "Location is required",
+    "jobTypeInvalid": "Select a job type",
+    "salaryInvalid": "Salary must be a whole number",
+    "salaryRange": "Salary to must not be lower than salary from",
+    "descriptionRequired": "Description is required",
+    "dateInvalid": "Invalid date",
+    "invalid": "Invalid value"
+  }
+}

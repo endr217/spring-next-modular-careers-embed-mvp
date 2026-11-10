@@ -1,0 +1,61 @@
+spring:
+  application:
+    name: careers-embed
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+  flyway:
+    enabled: true
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  messages:
+    basename: messages
+    fallback-to-system-locale: false
+  mail:
+    host: ${MAIL_HOST}
+    port: ${MAIL_PORT}
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+
+app:
+  name: ${APP_NAME}
+  public-url: ${APP_PUBLIC_URL}
+  frontend-url: ${FRONTEND_URL}
+  jwt:
+    secret: ${JWT_SECRET}
+    expiration-minutes: ${JWT_EXPIRATION_MINUTES}
+  i18n:
+    default-locale: ${APP_DEFAULT_LOCALE}
+    supported-locales: ${APP_SUPPORTED_LOCALES}
+  cors:
+    allowed-origins: ${CORS_ALLOWED_ORIGINS}
+  mail:
+    from-address: ${MAIL_FROM_ADDRESS}
+    from-name: ${MAIL_FROM_NAME}
+  stripe:
+    secret-key: ${STRIPE_SECRET_KEY}
+    price-monthly: ${STRIPE_PRICE_MONTHLY}
+    price-yearly: ${STRIPE_PRICE_YEARLY}
+    success-path: /company/subscription/checkout/success?session_id={CHECKOUT_SESSION_ID}
+    cancel-path: /company/subscription/checkout/cancel
